@@ -128,6 +128,10 @@ const App = () => {
 	const [ orderStatuses, setOrderStatuses ] = useState(JSON.parse((localStorage.getItem('orderStatuses') || 'null')) || {});
 	const [ order, setOrder ] = useState(JSON.parse((localStorage.getItem('orders') || 'null')) || {});
 
+	const [ faster, setFaster ] = useState(true);
+	const [ time, setTime ] = useState('');
+	const [ selfService, setSelfService ] = useState(false);
+
 	return (
 		<Router>
 			<Switch>
@@ -152,6 +156,12 @@ const App = () => {
 					<Basket
 						foodAreas={FOOD_AREAS}
 						order={order}
+						faster={faster}
+						setFaster={setFaster}
+						time={time}
+						setTime={setTime}
+						selfService={selfService}
+						setSelfService={setSelfService}
 					/>
 				</Route>
 				<Route
