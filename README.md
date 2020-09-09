@@ -1,4 +1,4 @@
-Развёрнутый сайт - kozodoi-club-hack.surge.sh
+Развёрнутый сайт - https://anatolyefimov.github.io/csc-test-app/
 
 Для локального развёртывания в корне необходимо выполнить npm i, затем npm start
 
